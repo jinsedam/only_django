@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'css/styles.css'%}" />
-    <title>Document</title>
+    {% block title %}{% endblock %}
   </head>
   <body>
-    <div class="w-screen h-screen">
-      <h1 class="w-full h-full bg-blue-200 text-red-300">THIS IS HOME!!</h1>
-    </div>
+    {% block body %}{% endblock %}
   </body>
 </html>
