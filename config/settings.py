@@ -41,10 +41,11 @@ DJANGO_APPS = [
 PROJECT_APPS = [
     'core.apps.CoreConfig',
     'users.apps.UsersConfig',
-    'infos.apps.InfosConfig',
+    'clubs.apps.ClubsConfig',
     'posts.apps.PostsConfig',
     'comments.apps.CommentsConfig',
     'conversations.apps.ConversationsConfig',
+    'lists.apps.ListsConfig',
 ]
 
 THIRD_PARTY_APPS = []
@@ -131,11 +132,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [ BASE_DIR / 'static']
+STATICFILES_DIRS = [BASE_DIR / 'static',]
 
 MEDIA_URL = '/uploads/'
 
-MEDIA_ROOT = [BASE_DIR / 'uploads']
+MEDIA_ROOT = BASE_DIR / 'uploads'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

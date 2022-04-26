@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class InfosConfig(AppConfig):
+class ListsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'infos'
+    name = 'lists'
